@@ -9,6 +9,7 @@ import {
   Input,
   Paragraph,
   SizableText,
+  Spacer,
   Square,
   TamaguiElement,
   Text,
@@ -62,7 +63,7 @@ export const Sandbox = () => {
         }}
       />
 
-      {/* 
+      {/*
       <Stack>
         <Square size={100} bc="yellow" $group-testy={{ bc: 'red' }} />
       </Stack> */}
@@ -80,10 +81,10 @@ export const Sandbox = () => {
       {/* <BenchmarkSelect /> */}
 
       {/* TODO test this one at diff sizes make sure:
-    
+
       - font size is right at each size
       - textTransform + lineHeight too etc
-    
+
     */}
       {/* <H1
         ta="left"
