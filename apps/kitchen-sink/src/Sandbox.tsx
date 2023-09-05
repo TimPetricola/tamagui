@@ -47,8 +47,8 @@ export const Sandbox = () => {
 
       <Square
         size={100}
-        debug
-        bc="green"
+        debug="borders"
+        // bc="red"
         // $group-testy={{
         //   bc: 'brown',
         // }}
@@ -62,11 +62,10 @@ export const Sandbox = () => {
           bc: 'palegoldenrod',
         }}
       />
-
-      {/*
-      <Stack>
-        <Square size={100} bc="yellow" $group-testy={{ bc: 'red' }} />
-      </Stack> */}
+      <Spacer debug="borders" flex />
+      <Stack debug="borders">
+        <Square debug="borders" size={100} />
+      </Stack>
 
       {/* <TextInput theme={theme} /> */}
       {/* <Button onPress={() => setTheme('red')}>asdsad</Button> */}
