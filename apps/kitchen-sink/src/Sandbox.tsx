@@ -1,15 +1,22 @@
 // debug-verbose
 // import './wdyr'
 
-import { Text } from '@tamagui/core'
-import { View } from 'react-native'
+import { Check } from '@tamagui/lucide-icons'
+import { Button, Checkbox, Popover, YStack } from 'tamagui'
 
 export const Sandbox = () => {
   return (
-    <View style={{ width: '100%', height: '100%', padding: 50 }}>
-      <>
-        <Text color="unset">test me</Text>
-      </>
-    </View>
+    <Popover>
+      <Popover.Trigger>
+        <Button>Trigger</Button>
+      </Popover.Trigger>
+      <Popover.Content key="content" borderWidth={1} borderColor="$borderColor">
+        <Checkbox size="$4">
+          <Checkbox.Indicator enterStyle={{ scale: 0 }} animation="bouncy">
+            <Check />
+          </Checkbox.Indicator>
+        </Checkbox>
+      </Popover.Content>
+    </Popover>
   )
 }
